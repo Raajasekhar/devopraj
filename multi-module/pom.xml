@@ -15,15 +15,12 @@
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
-
-  <modules>
+<modules>
     <module>server</module>
     <module>webapp</module>
   </modules>
-
-  <distributionManagement>
+         <distributionManagement>
  <repository>
-
 <id>nexus</id>
 <url>http://localhost:8081/nexus/content/repositories/releases/</url>
 </repository>
@@ -32,7 +29,7 @@
 <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
  </snapshotRepository>
 <site>
-      <id>site-server</id>
+   <id>site-server</id>
       <name>Test Project Site</name>
       <url>file:///tmp/multi-module-site</url>
     </site>
