@@ -22,14 +22,22 @@
   </modules>
 
   <distributionManagement>
-    <site>
+ <repository>
+
+<id>nexus</id>
+<url>http://localhost:8081/nexus/content/repositories/releases/</url>
+</repository>
+<snapshotrepository>
+<id>nexus</id>
+<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+ </snapshotrepository>
+<site>
       <id>site-server</id>
       <name>Test Project Site</name>
       <url>file:///tmp/multi-module-site</url>
     </site>
   </distributionManagement>
-
-  <build>
+<build>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
